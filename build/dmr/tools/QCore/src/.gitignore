@@ -1,0 +1,13 @@
+build/
+backup/
+examples/fragment.meta copy.json
+examples/fragment.meta.json
+PARSER/
+src/backends/backend_gpu_cuquantum.cpp.local
+run_qcore_batch
+README.md.local
+examples/
+examples/job-28/output/qtensor_reconstruction.json
+examples/job-28/qcore_outputs_job-28.jsonl
+cuda-keyring_1.1-1_all.deb
+install_cuda_quantum_cu13.x86_64

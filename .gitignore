@@ -1,0 +1,7 @@
+build/qcut/tools/tmp/*
+shared/qcut/jobs/*
+services/qcut/.venv
+services/qcut/app/__pycache__
+build/qcut/tools/bin
+build/qcut/tools/tmp
+build/dmr/examples/qcut_pipeline/circuits_out

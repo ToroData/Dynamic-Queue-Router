@@ -1,0 +1,12 @@
+[submodule "tools/slurm"]
+	path = tools/slurm
+	url = https://gitlab.bsc.es/accelcom/dmr/tools/slurm.git
+	branch = main
+[submodule "examples/hello-world"]
+	path = examples/hello-world
+	url = https://gitlab.bsc.es/accelcom/dmr/examples/hello-world.git
+	branch = main
+[submodule "examples/distributed-dataset-sleep"]
+	path = examples/distributed-dataset-sleep
+	url = https://gitlab.bsc.es/accelcom/dmr/examples/distributed-dataset-sleep.git
+	branch = main

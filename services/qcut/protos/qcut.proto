@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package qcut;
+
+service QCutService {
+  rpc CutCircuit(CutCircuitRequest) returns (CutCircuitResponse);
+}
+
+message CutCircuitRequest {
+  string job_id = 1;
+  string circuit_qasm = 2;
+  string export_format = 3;
+  bool gate_cut = 4;
+  int32 qpu_max_qubits = 5;
+  int32 depth_threshold_qpu = 6;
+  string observable = 7;
+}
+
+message CutCircuitResponse {
+  bool ok = 1;
+  string message = 2;
+  string job_id = 3;
+  string manifest_json = 4;
+  string fragments_json = 5;
+  string partition_json = 6;
+  repeated Subcircuit subcircuits = 7;
+}
+
+message Subcircuit {
+  string fragment_id = 1;
+  string qasm = 2;
+  string meta_json = 3;
+}
